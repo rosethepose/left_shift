@@ -21,9 +21,9 @@
 
 
 module left_shift(
-    input logic[3:0] sw,
-    input logic[1:0] shamt,
-    output logic[3:0] led
+    input [3:0] sw,
+    input [1:0] shamt,
+    output reg [3:0] led
     );
     assign led = sw * (2**shamt);
 endmodule
